@@ -6,6 +6,9 @@ body {
 }
 
 /* header and footer areas */
+.hd { display: flex; align-items: center; }
+.hd img { display: inline-block; }
+.hd a { padding-right: 1em; display: inline-block; }
 .menu { padding: 0; }
 .menu li { display: inline-block; }
 .article-meta, .menu a {

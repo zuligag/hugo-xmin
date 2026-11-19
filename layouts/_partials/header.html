@@ -10,11 +10,10 @@
   </head>
 
   <body>
-    <nav>
-    <ul class="menu">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
-    <hr/>
+    <nav class="hd">
+    <img src="/images/derekdb.svg" style="width:7em; padding-right: 2em;" alt="derekdb" />
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+    {{ end }}
     </nav>
+    <hr/>
