@@ -1,9 +1,16 @@
-  <footer>
+<footer>
   {{ partial "foot_custom.html" . }}
   {{ with .Site.Params.footer }}
   <hr/>
   {{ replace . "{Year}" now.Year | markdownify }}
   {{ end }}
-  </footer>
-  </body>
+</footer>
+</body>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
 </html>

@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+<div class="main">
 {{ if not .IsHome }}
 <h1>{{ .Title | markdownify }}</h1>
 {{ end }}
@@ -18,3 +19,5 @@
 </ul>
 
 {{ partial "footer.html" . }}
+
+</div><!-- main -->

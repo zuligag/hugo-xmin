@@ -6,14 +6,17 @@
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" rel="stylesheet">
     {{ partial "head_custom.html" . }}
   </head>
 
   <body>
-    <nav class="hd">
-    <img src="/images/derekdb.svg" style="width:7em; padding-right: 2em;" alt="derekdb" />
+  <aside class="hd">
+    <img src="/images/face.jpg" alt="face" />
+    <img src="/images/derekdb.svg" alt="derekdb" />
+    <nav>
     {{ range .Site.Menus.main }}
     <a href="{{ .URL | relURL }}">{{ .Name }}</a>
     {{ end }}
     </nav>
-    <hr/>
+  </aside>
